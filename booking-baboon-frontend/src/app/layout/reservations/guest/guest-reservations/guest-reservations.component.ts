@@ -17,7 +17,7 @@ export class GuestReservationsComponent {
 
   reservations!: Reservation[]
   dataSource!: MatTableDataSource<Reservation>;
-  displayedColumns: string[] = ['host', 'dates', 'accommodation', 'status', 'action'];
+  displayedColumns: string[] = ['id', 'host', 'dates', 'accommodation', 'status', 'action'];
   isHostReviewShowing: boolean = false;
   isAccommodationReviewShowing: boolean = false;
   current_host_id!: number;
