@@ -1,4 +1,5 @@
 import {Guest} from "../models/guest.model";
+import {GuestResponse} from "../dtos/guest-response";
 
 enum UserStatus{
   Inactive= "Inactive",
@@ -56,7 +57,19 @@ const mockGuest2: Guest = {
   ],
 };
 
-const mockGuestArray: Guest[] = [mockGuest1, mockGuest2];
+const mockGuestResponse1: GuestResponse = {
+  id: 1,
+  email: 'guest1@example.com',
+  jwt: ''
+};
 
-export { mockGuest1, mockGuest2, mockGuestArray};
+const mockGuestResponse2: GuestResponse = {
+  id: 2,
+  email: 'guest2@example.com',
+  jwt: ''
+}
+const mockGuestArray: Guest[] = [mockGuest1, mockGuest2];
+const mockGuestResponseArray: GuestResponse[] = [mockGuestResponse1, mockGuestResponse2];
+
+export { mockGuest1, mockGuest2, mockGuestArray, mockGuestResponseArray, mockGuestResponse1, mockGuestResponse2};
 
